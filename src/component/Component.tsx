@@ -1,11 +1,5 @@
 import React from 'react'
 
-export function Sample() {
-    return (
-        <h1>Sample Component</h1>
-    );
-}
-
 export default function Component() {
     // 함수형 컴포넌트의 return
     // - 해당 컴포넌트가 렌더링할 요소를 지정하는 곳(반환하는 곳)
@@ -19,6 +13,23 @@ export default function Component() {
         <>
             <div>Component</div>
             <div>Component</div>
+            <JsxComponent />
+        </>
+    );
+}
+
+function JsxComponent () {
+    
+    // JSX / TSX 규칙:
+    // - 1. 반드시 하나의 요소만 반환해야함 (<div> 혹은 <>요소로 묶어야함)
+    // - 2. 모든 태그는 닫아야한다 ( </> )
+    // - 3. 속성들은 JSX로 지정되어있는 이름으로 사용해야함 (loweCamleCase를 따름)
+    return (
+        <>
+        <h1>첫번째 페이지입니다.</h1>
+            <div>
+                <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2022/01/28/111500268.2.jpg" className="image-box" />
+            </div>
         </>
     );
 }
