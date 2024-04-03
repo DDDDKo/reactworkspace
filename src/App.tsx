@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Component from './component/Component';
+import Sample from './component/Sample';
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -17,10 +19,10 @@ import './App.css';
 // 컴포넌트를 선언하는 방법 :
 // 1. class component
 // - class로 컴포넌트를 작성
-// - 반드시 클래스 이름은 첫글자는 대문자로 작성
+// - 반드시 클래스 이름의 첫글자는 대문자로 작성
 // - react 패키지에 있는 Component 클래스를 상속하여 구현
 // - render() 함수의 반환값으로 렌더링하고자 하는 (hmtl)요소를 지정
-class Classcomponent extends React.Component {
+class ClassComponent extends React.Component {
   render(): React.ReactNode {
       return(
         <h1>클래스형 컴포넌트</h1>
@@ -28,11 +30,48 @@ class Classcomponent extends React.Component {
   }
 }
 
+// 2. function component
+// - function으로 컴포넌트 작성
+// - 반드시 함수의 이름의 첫글자는 대문자로 작성
+// - 컴포넌트 함수의 반환값으로 렌더링하고자 하는 요소를 지정
+function FunctionComponent () {
+  return (
+    <h1>함수형 컴포넌트</h1>
+  );
+}
+
+// 클래스형 컴포넌트는 잘 사용되지 않음, 대부분 함수형으로 작성
+// * ES7 + React/Redux/React-Native snippets 확장을 설치 후 
+// * 단축 명령으로 클래스형 혹은 함수형 컴포넌트를 생성할 수 있음
+
+// * 클래스형 컴포넌트는 rcc 단축 명령으로 생성 가능
+// * 클래스의 이름 = 파일명 (클래스의 이름과 파일명이 동일하게 작성됨)
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>App</div>
+//     )
+//   }
+// }
+
+// * 함수형 컴포넌트는 rfc 단축 명령으로 생성 가능
+// * 함수의 이름 = 파일명 (함수의 이름과 파일명이 동일하게 작성됨)
+// export default function App() {
+//   return (
+//     <div>App</div>
+//   )
+// }
+
+
 function App() {
   return (
-    <div>
-      <Classcomponent />
-    </div>
+    <>
+      {/* <ClassComponent />
+      <FunctionComponent /> */}
+      <Component />
+      <Sample />
+    </>
   );
 }
 
