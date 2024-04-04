@@ -35,3 +35,22 @@ export function PasswordInputBox() {
         </div>
     );
 }
+
+interface Props{
+    label : string;
+    type : 'text' | 'password';
+    placeholder : string;
+}
+
+export default function InputBox({label, type, placeholder}: Props) {
+
+    return (
+        <div className="input-box">
+            <div className="input-label label">{label}</div>
+            <div className="input-content-box">
+                <input  className="input" type={type} placeholder={placeholder}/>
+            </div>
+            <div className="input-message"></div>
+        </div>
+    );
+}
