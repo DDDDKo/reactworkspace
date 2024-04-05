@@ -10,6 +10,7 @@ interface Props{
 }
 
 export default function Inputbox({label, type, placeholder, buttonTitle}:Props) {
+    
     return (
         <div className="input-box">
             <div className="input-label label">{label}</div>
@@ -19,9 +20,11 @@ export default function Inputbox({label, type, placeholder, buttonTitle}:Props) 
                     type= {type}
                     placeholder= {placeholder}
                 />
+                { buttonTitle &&
                 <div className="input-disable-button">
                     {buttonTitle}
                 </div>
+                }
             </div>
             <div className="input-message"></div>
         </div>

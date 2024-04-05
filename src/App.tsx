@@ -7,6 +7,7 @@ import SignInContainer from './component_manage/example/SignInContainer';
 import CurlyBraces from './component/CurlyBraces';
 import Properties from './component_manage/Properties';
 import ConditionalRendering from './component_manage/ConditionalRendering';
+import ListRendering from './component_manage/ListRendering';
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -78,9 +79,10 @@ function App() {
       <Sample /> */}
       {/* <SignInContainer1 /> */}
       {/* <SignInContainer /> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
       {/* <CurlyBraces /> */}
       {/* <Properties /> */}
+      <ListRendering />
     </>
   );
 }
