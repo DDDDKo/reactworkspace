@@ -32,6 +32,8 @@ export default function EventComponent() {
         console.log(count);
     };
 
+    
+
 
     return (
         <>
