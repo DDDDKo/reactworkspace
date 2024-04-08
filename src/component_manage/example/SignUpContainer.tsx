@@ -11,7 +11,7 @@ const InputBoxes:InputBoxProps[] =[
     {label: '이메일 인증', type: 'text', placeholder: '인증번호 4자리를 입력해주세요.', buttonTitle: '인증 확인'}
 ];
 
-export default function SignInContainer() {
+export default function SignUpContainer() {
 
     const InputBoxComponent = InputBoxes.map( (item, index) => <InputBox key={index} {...item}/>);
 
