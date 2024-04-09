@@ -10,6 +10,7 @@ import ListRendering from './component_manage/ListRendering';
 import SignUpContainer from './component_manage/example/SignUpContainer';
 import EventComponent from './interaction/EventComponent';
 import StateComponent from './interaction/StateComponent';
+import ForwordingStateComponent from './interaction/ForwordingStateComponent';
 
 // JSX / TSX : 
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -86,7 +87,8 @@ function App() {
       {/* <Properties /> */}
       {/* <ListRendering /> */}
       {/* <EventComponent /> */}
-      <StateComponent/>
+      {/* <StateComponent/> */}
+      <ForwordingStateComponent/>
       
     </>
   );
